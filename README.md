@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hotel Booking System
 
 ## Project Information
@@ -105,3 +106,7 @@ Hotel-Booking-System/
 ├── docs/
 ├── README.md
 └── .gitignore
+=======
+# Hotel-Booking-Platform
+The Hotel Booking System is a web-based application designed to simplify hotel operations by managing room information, customer bookings, check-in/check-out processes, payments, and reservation records.  The system provides hotel staff with a centralized platform for managing reservations and hotel operations while allowing customers
+>>>>>>> 5df6e33fb4f4189a0121431333d992c4a0c93f2b
