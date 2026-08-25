@@ -1,32 +1,15 @@
-import { useEffect, useState } from "react";
-import api from "../services/api";
-
 function Home() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    api
-      .get("/health")
-      .then((response) => {
-        setMessage(response.data.message);
-      })
-      .catch((error) => {
-        console.error("API Error:", error);
-      });
-  }, []);
-
   return (
-    <div>
+    <section className="page">
       <h1>Hotel Booking System</h1>
 
-      <p>
-        Welcome to our hotel booking application.
-      </p>
+      <h2>Welcome to Our Hotel</h2>
 
       <p>
-        Backend Status: {message}
+        Find comfortable rooms, make reservations,
+        and manage your hotel bookings easily.
       </p>
-    </div>
+    </section>
   );
 }
 

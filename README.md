@@ -138,3 +138,43 @@ A MERN Stack Hotel Booking System developed as part of the Advanced Application 
 ```text
 client/
 server/
+
+# Hotel Booking System
+
+A MERN Stack Hotel Booking System developed as part of the Advanced Application Development project.
+
+## Technology Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB
+- Mongoose
+
+## Frontend Structure
+
+The frontend follows a modular React architecture.
+
+```text
+src/
+├── assets/
+├── components/
+├── hooks/
+├── layouts/
+├── pages/
+├── routes/
+├── services/
+├── utils/
+├── App.jsx
+└── main.jsx

@@ -1,9 +1,12 @@
 function Login() {
   return (
-    <div>
+    <section className="page">
       <h1>Login</h1>
-      <p>Login form will be implemented here.</p>
-    </div>
+
+      <p>
+        Login to your Hotel Booking System account.
+      </p>
+    </section>
   );
 }
 
