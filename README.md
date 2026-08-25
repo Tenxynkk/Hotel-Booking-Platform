@@ -110,3 +110,31 @@ Hotel-Booking-System/
 # Hotel-Booking-Platform
 The Hotel Booking System is a web-based application designed to simplify hotel operations by managing room information, customer bookings, check-in/check-out processes, payments, and reservation records.  The system provides hotel staff with a centralized platform for managing reservations and hotel operations while allowing customers
 >>>>>>> 5df6e33fb4f4189a0121431333d992c4a0c93f2b
+# Hotel Booking System
+
+A MERN Stack Hotel Booking System developed as part of the Advanced Application Development project.
+
+## Technology Stack
+
+### Frontend
+- React
+- Vite
+- React Router
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- CORS
+- Dotenv
+- Nodemon
+
+### Database
+- MongoDB
+- Mongoose
+
+## Project Structure
+
+```text
+client/
+server/

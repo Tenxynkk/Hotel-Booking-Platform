@@ -1,5 +1,9 @@
 # Dependencies
 node_modules/
+.env
+dist/
+.DS_Store
+*.log
 
 # Environment variables
 .env
@@ -22,3 +26,4 @@ Thumbs.db
 
 # Coverage
 coverage/
+
