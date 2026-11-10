@@ -1,74 +1,147 @@
 @import "./variables.css";
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Main Website */
 body {
-  font-family: var(--font-family);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #263238;
 }
 
-h1, h2, h3 {
-  margin-bottom: 15px;
-}
-
-p {
-  line-height: 1.6;
-}
-
+/* Navigation Bar */
 .navbar {
-  background-color: var(--primary-color);
-  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #234e70;
+  color: #ffffff;
   padding: 20px 40px;
 }
 
-.navbar p {
-  margin-top: 5px;
+.navbar h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #dceaf7;
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  min-height: 70vh;
+  background-color: #f5f7fa;
 }
 
 .page {
-  min-height: 65vh;
+  min-height: 70vh;
   padding: 50px 40px;
+  background-color: #f5f7fa;
+  color: #263238;
 }
 
+.page h1 {
+  color: #234e70;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.page h2,
+.page h3 {
+  color: #234e70;
+  margin-bottom: 15px;
+}
+
+.page p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer */
 .footer {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: #234e70;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
 }
 
-.auth-layout {
-  padding: 40px;
+.footer p {
+  color: #ffffff;
 }
 
+/* Login Layout */
+.auth-layout {
+  min-height: 70vh;
+  padding: 40px;
+  color: #263238;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar */
 .sidebar {
   padding: 20px;
-  background-color: var(--secondary-color);
+  background-color: #dceaf7;
+  color: #263238;
 }
 
+/* Buttons */
 .common-button {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: #234e70;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+/* Cards */
 .card {
-  background-color: var(--white);
+  background-color: #ffffff;
+  color: #263238;
   padding: 20px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #dddddd;
   border-radius: 8px;
   margin: 15px 0;
 }
 
+.card h3 {
+  color: #234e70;
+}
+
+.card p {
+  color: #333333;
+}
+
+/* Loader */
 .loader {
   text-align: center;
   padding: 20px;
+  color: #263238;
 }

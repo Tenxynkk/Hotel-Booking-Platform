@@ -1,19 +1,17 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
-    <header className="navbar">
-      <div className="navbar-container">
-        <div className="logo">
-          Hotel Booking System
-        </div>
+    <nav className="navbar">
+      <h2>Hotel Booking System</h2>
 
-        <nav className="navbar-links">
-          <span>Home</span>
-          <span>Rooms</span>
-          <span>Bookings</span>
-          <span>Login</span>
-        </nav>
+      <div className="nav-links">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/profile">Profile</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </div>
-    </header>
+    </nav>
   );
 }
 

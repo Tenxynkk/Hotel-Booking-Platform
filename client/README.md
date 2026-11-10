@@ -10,6 +10,17 @@ The frontend of the Hotel Booking System is developed using React.js and Vite.
 - Axios
 - CSS
 
+## Routing
+
+React Router DOM is used for client-side navigation.
+
+The application includes:
+- Home
+- Login
+- Dashboard
+- Profile
+- Not Found (404)
+
 ## Installation
 
 Install the required dependencies:
