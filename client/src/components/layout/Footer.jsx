@@ -1,8 +1,16 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
+      <h3>Hotel Booking System</h3>
+
       <p>
-        © 2026 Hotel Booking System. All rights reserved.
+        Find comfortable rooms and enjoy a pleasant stay.
+      </p>
+
+      <p className="copyright">
+        © {currentYear} Hotel Booking System. All rights reserved.
       </p>
     </footer>
   );

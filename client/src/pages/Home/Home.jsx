@@ -1,14 +1,32 @@
+import PageTitle from "../../components/ui/PageTitle";
+import Card from "../../components/ui/Card";
+import Button from "../../components/ui/Button";
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <section className="page">
-      <h1>Hotel Booking System</h1>
+      <PageTitle
+        title="Welcome to Our Hotel"
+        subtitle="Find comfortable rooms and enjoy a pleasant stay."
+      />
 
-      <h2>Welcome to Our Hotel</h2>
+      <Card
+        title="Find Your Perfect Stay"
+        description="Explore our hotel rooms and discover comfortable accommodation for your next visit."
+      >
+        <Button
+          text="Get Started"
+          onClick={() => navigate("/login")}
+        />
+      </Card>
 
-      <p>
-        Find comfortable rooms, make reservations,
-        and manage your hotel bookings easily.
-      </p>
+      <Card
+        title="Easy Booking"
+        description="Our hotel booking platform makes it easier to explore rooms and manage your reservations."
+      />
     </section>
   );
 }

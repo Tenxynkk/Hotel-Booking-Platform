@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>Hotel Booking System</h2>
+      <div className="navbar-brand">
+        <h2>Hotel Booking System</h2>
+      </div>
 
       <div className="nav-links">
         <NavLink to="/">Home</NavLink>

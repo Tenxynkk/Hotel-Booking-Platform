@@ -1,11 +1,24 @@
+import PageTitle from "../../components/ui/PageTitle";
+import Card from "../../components/ui/Card";
+import Button from "../../components/ui/Button";
+
 function Login() {
   return (
     <section className="page">
-      <h1>Login</h1>
+      <PageTitle
+        title="Login"
+        subtitle="Welcome back! Access your hotel booking account."
+      />
 
-      <p>
-        Login to your Hotel Booking System account.
-      </p>
+      <Card
+        title="Account Login"
+        description="Login functionality will be implemented in a later sprint."
+      >
+        <Button
+          text="Login"
+          onClick={() => alert("Login functionality coming soon")}
+        />
+      </Card>
     </section>
   );
 }
