@@ -1,0 +1,88 @@
+/* Main Application Layout */
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #234e70;
+  color: #ffffff;
+  padding: 20px 40px;
+}
+
+.navbar-brand h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 23px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #dceaf7;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Page Layout */
+
+.page {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 45px 40px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #234e70;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}

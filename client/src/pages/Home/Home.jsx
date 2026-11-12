@@ -13,20 +13,22 @@ function Home() {
         subtitle="Find comfortable rooms and enjoy a pleasant stay."
       />
 
-      <Card
-        title="Find Your Perfect Stay"
-        description="Explore our hotel rooms and discover comfortable accommodation for your next visit."
-      >
-        <Button
-          text="Get Started"
-          onClick={() => navigate("/login")}
-        />
-      </Card>
+      <div className="home-cards">
+        <Card
+          title="Find Your Perfect Stay"
+          description="Explore our hotel rooms and discover comfortable accommodation for your next visit."
+        >
+          <Button
+            text="Get Started"
+            onClick={() => navigate("/login")}
+          />
+        </Card>
 
-      <Card
-        title="Easy Booking"
-        description="Our hotel booking platform makes it easier to explore rooms and manage your reservations."
-      />
+        <Card
+          title="Easy Booking"
+          description="Our hotel booking platform makes it easier to explore rooms and manage your reservations."
+        />
+      </div>
     </section>
   );
 }
