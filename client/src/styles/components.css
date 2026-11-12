@@ -57,6 +57,33 @@
   margin-top: 15px;
 }
 
+.welcome-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #263238;
+  font-weight: bold;
+}
+
+.welcome-input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #aeb8bf;
+  border-radius: 4px;
+  color: #263238;
+  background-color: #ffffff;
+}
+
+.welcome-input:focus {
+  outline: 2px solid #234e70;
+  outline-offset: 2px;
+}
+
+.welcome-message,
+.dashboard-feedback {
+  margin-top: 12px;
+}
+
 /* Responsive Card Containers */
 
 .dashboard-cards,

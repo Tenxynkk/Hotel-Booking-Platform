@@ -1,8 +1,11 @@
+import { useState } from "react";
 import PageTitle from "../../components/ui/PageTitle";
 import Card from "../../components/ui/Card";
 import Button from "../../components/ui/Button";
 
 function Dashboard() {
+  const [bookingCount, setBookingCount] = useState(24);
+
   return (
     <section className="page">
       <PageTitle
@@ -13,12 +16,17 @@ function Dashboard() {
       <div className="dashboard-cards">
         <Card
           title="Total Bookings"
-          description="View and manage your hotel reservations."
+          description="Demo counter: update the total with the button."
         >
-          <h2>24</h2>
+          <h2>{bookingCount}</h2>
+          <p className="dashboard-feedback" aria-live="polite">
+            {bookingCount === 24
+              ? "No demo bookings added yet."
+              : `${bookingCount - 24} demo ${bookingCount - 24 === 1 ? "booking" : "bookings"} added this visit.`}
+          </p>
           <Button
-            text="View Bookings"
-            onClick={() => alert("Bookings section selected")}
+            text="Add Booking"
+            onClick={() => setBookingCount((count) => count + 1)}
           />
         </Card>
 
